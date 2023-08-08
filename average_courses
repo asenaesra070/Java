@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class Package1 {
+    public static void main(String[] args) {
+        /* An application that takes the grade point
+        average of the courses whose grades are entered on the screen
+         */
+       // Variables
+        int mat,fizik,kimya,biyoloji ;
+       // Scanner class will be defined
+        Scanner input =new Scanner(System.in);
+        // Get value
+        System.out.println("Matematik course : ");
+        mat = input.nextInt();
+        System.out.println("fizik course : ");
+        fizik = input.nextInt();
+        System.out.println("kimya course : ");
+        kimya = input.nextInt();
+        System.out.println("biyoloji course : ");
+        biyoloji = input.nextInt();
+        // summation and their average
+        int toplam = (mat+fizik+kimya+biyoloji);
+        double avr = toplam / 4;
+        System.out.println("Average of the courses : " +avr );
+
+        // Pass or Not
+        int passNote = 60;
+        boolean condition1= avr > passNote;
+        String str = condition1 ? "Class is already passed" : "Class is already passed" ;
+        System.out.print(str);
+
+
+
+    }
+}
